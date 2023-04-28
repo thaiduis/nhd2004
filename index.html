@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View ảnh và nhãn</title>
+    <style>
+        body{
+            padding: 20px;
+            font-family: sans-serif;
+            background-color: #f2f2F2;
+        }
+        img{width: 100%;height: 100%;
+        }
+h2{margin-bottom: .5em;}
+.gird-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 1em;
+}
+.location-listing{
+    position: relative;
+}
+.location-image{
+    line-height: 0;
+    overflow: hidden;
+    width: 300;
+    height: 170;
+} 
+.location-image img{
+    filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+    transform: scale(1.1);
+    width: 300;
+    height: 170;
+    object-fit: cover;
+}
+.location-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;
+  left: 0 ;
+  opacity: 0;
+  transform: opcity;
+  background:rgba(90, 0, 10,0.4) ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.location-listing:hover .location-title{opacity: 1;}
+.location-listing:hover .location-image img
+{filter: blur(2px);}
+@media (hover:none){
+    .location-title{opacity: 1;}
+    .location-image img{filter: blur(2px);}
+}
+
+
+      </style>
+</head>
+<body>
+    <div class="child-page-listing">
+        <h2>Những địa điểm du lịch </h2>
+        <div class="gird-container">
+            <article id="3685" class="location-listing">
+                <a class="location-title" href="https://vietgoing.com/destination/767-bai-bien-dong-chau.html">Biển Đồng Châu</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh1.jpg" width="300" height="170" alt="Biển Đồng Châu"> </a>
+                </div>
+                
+
+                
+            </article>
+            <article id="3689" class="location-listing">
+                <a class="location-title" href="https://vi.wikipedia.org/wiki/Ch%C3%B9a_Keo_(Th%C3%A1i_B%C3%ACnh)">Chùa Keo</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh4.jpg" width="300" height="170" alt="chùa Keo"> </a>
+                </div>
+            </article>
+            <article id="3691" class="location-listing">
+                <a class="location-title" href="https://vi.wikipedia.org/wiki/Nh%C3%A0_th%E1%BB%9D_B%C3%A1c_Tr%E1%BA%A1ch">Nhà Thờ Bác Trạch</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh3.jpg" width="300px" height="170" alt="Nhà thờ Bác Trạch"> </a>
+                </div>
+            </article>
+            <article id="3694" class="location-listing">
+                <a class="location-title" href="https://www.bachhoaxanh.com/kinh-nghiem-hay/bien-vo-cuc-thai-binh-co-gi-ma-thu-hut-gioi-tre-check-in-den-vay-1466188">Biển vô cực</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh2.jpg" width="300" height="170" alt="Biển vô cực"> </a>
+                </div>
+            </article>
+
+            <article id="3697" class="location-listing">
+                <a class="location-title" href="http://www.vamvo.com/ConDenThaiBinh.aspx">Cồn Đen</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh5.jpg" width="300px" height="170px " alt="Cồn Đen"> </a>
+                </div>
+            </article>
+
+            <article id="3710" class="location-listing">
+                <a class="location-title" href="https://vi.wikipedia.org/wiki/Nh%C3%A0_th%E1%BB%9D_ch%C3%ADnh_t%C3%B2a_Th%C3%A1i_B%C3%ACnh">Nhà thờ Chính Tòa Thái Bình</a>
+                <div class="location-image">
+                    <a href=""> <img src="anh6.jfif" width="300" height="170" alt="Paris"> </a>
+                </div>
+            </article>
+
+
+        </div>
+        <div class="child-page-listing">
+            <h2>Những Đặc sản Thái Bình </h2>
+            <div class="gird-container">
+                <article id="3685" class="location-listing">
+                    <a class="location-title" href="#">Bánh cáy</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh7.jpg" width="300" height="170" alt="Bánh cáy"> </a>
+                    </div>
+                </article>
+                <article id="3689" class="location-listing">
+                    <a class="location-title" href="#">Canh Cá Quỳnh Côi</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh8.webp" width="300" height="170" alt="Canh cá Quỳnh côi"> </a>
+                    </div>
+                </article>
+                <article id="3691" class="location-listing">
+                    <a class="location-title" href="#">Bánh cốm</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh92.jpg" width="300px" height="170" alt="Bánh Cốm"> </a>
+                    </div>
+                </article>
+                <article id="3694" class="location-listing">
+                    <a class="location-title" href="#">Bánh Nghệ</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh10.webp" width="300" height="170" alt="Bánh nghệ"> </a>
+                    </div>
+                </article>
+    
+                <article id="3697" class="location-listing">
+                    <a class="location-title" href="#">Nộm sứa</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh11.jpg" width="300px" height="170px " alt="Nộm sứa"> </a>
+                    </div>
+                </article>
+    
+                <article id="3710" class="location-listing">
+                    <a class="location-title" href="#">Kẹo Lạc</a>
+                    <div class="location-image">
+                        <a href=""> <img src="anh12.webp" width="300" height="170" alt="Kẹo Lạc"> </a>
+                    </div>
+                </article>
+    
+    
+            </div>
+
+    </div>
+</body>
+</html>
